@@ -1,0 +1,49 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/******************************** start css for slider */
+.product-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.product-slider .slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.product-slider .slider .items {
+    display: flex;
+    transition: 0.6s;
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+.product-slider .slider .items .item {
+    display: flex;
+    flex-direction: column;
+    min-width: 410px;
+    margin: 0 8px;
+    position: relative;
+}
+.product-slider .arrow-l,
+.product-slider .arrow-r {
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+}
+.product-slider .arrow-l {   
+    border-right-color: #000;
+    border-left: 0;
+}
+.product-slider .arrow-r {
+    border-left-color: #000;
+    border-right: 0;
+    margin-left: 8px;
+}
